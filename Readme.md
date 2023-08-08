@@ -21,6 +21,9 @@ View if wifi usb dongle is correcly installed
  The device wlan1 shoud appear, otherwise install usb dongle firmware 
  
      sudo apt-get install firmware-realtek
+     sudo apt-get install zd1211-firmware  # download directly from http://mirrors.pidginhost.com/raspbian/raspbian/pool/non-free/z/zd1211-firmware/firmware-zd1211_1.5-6_all.deb
+
+Otherwise https://wiki.debian.org/zd1211rw
 
 If still dows not work, for example we have a Cudy WU700 with RTL8811CU, we need to recompile the firmware. Follow instructions from https://github.com/fastoe/RTL8811CU_for_Raspbian
 
@@ -70,7 +73,7 @@ Install and configure hostapd to create the access point on wlan0
 For WPA2 authentication and 2.4 Ghz (channel 1), put this text:
 
     interface=wlan0
-    driver=nl80211
+    driver=nl80211  
     hw_mode=g
     channel=1
     wpa=2
