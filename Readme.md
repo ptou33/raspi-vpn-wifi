@@ -57,7 +57,11 @@ Put these at the end:
     interface wlan0
       nohook wpa_supplicant
       static ip_address=192.168.4.1/24
-      static domain_name_servers=10.0.0.243
+      static domain_name_servers=223.6.6.41
+      #other China DNS options from https://public-dns.info/nameserver/cn.html
+      #223.5.5.5 223.5.5.0 dna alibaba hangzhou
+      #103.144.53.238 guangdong
+
     
 The static domain_name_servers can be read and put the same as tun0.openvpn, so that DNS requests are forwarded only to the VPN
 
