@@ -1,7 +1,7 @@
 # Make a Raspberry Pi a wifi access point that forward traffic to a VPN
 
 UPDATE: from time to time dns are shut down. Lookup a reliable DNS from https://dnschecker.org/public-dns/cn
-and input its ip address into /etc/dhcpcd.conf
+and input its ip address into /etc/dhcpcd.conf static domain_name_servers=180.76.76.76
 ----
 
 
