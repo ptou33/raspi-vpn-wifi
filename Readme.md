@@ -1,5 +1,10 @@
 # Make a Raspberry Pi a wifi access point that forward traffic to a VPN
 
+UPDATE: from time to time dns are shut down. Lookup a reliable DNS from https://dnschecker.org/public-dns/cn
+and input its ip address into /etc/dhcpcd.conf
+----
+
+
 We will configure these devices:
 - wlan0: internal wifi that is used to create the access point
 - wlan1: a USB Wifi dongle used to connect to internet (house wifi router)
