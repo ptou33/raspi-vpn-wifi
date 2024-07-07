@@ -117,6 +117,7 @@ This means a Manual Setup with:
 - Country = China
 - Server Group = Premium Servers - OpenVPN
 - Device Name = raspberry
+  
 Save the configuration, then View it to downnload "raspberry_openvpn.zip"
 Copy it to raspberry, then:
 
