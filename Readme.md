@@ -110,7 +110,15 @@ Put these lines at the end:
 
 ## tun0: vpn to CyberGhost
 Create the zip from https://my.cyberghostvpn.com/ following manual setup.
-Download the configuration, and install it like https://support.cyberghostvpn.com/hc/en-us/articles/213813045-Raspberry-Pi-How-to-configure-a-Raspberry-Pi-as-a-web-proxy-with-OpenVPN but without privoxy
+Download the configuration, and install it like https://support.cyberghostvpn.com/hc/en-us/articles/213813045-Raspberry-Pi-How-to-configure-a-Raspberry-Pi-as-a-web-proxy-with-OpenVPN but without privoxy.
+
+This means a Manual Setup with:
+- Protocol = Open VPN
+- Country = China
+- Server Group = Premium Servers - OpenVPN
+- Device Name = raspberry
+Save the configuration, then View it to downnload "raspberry_openvpn.zip"
+Copy it to raspberry, then:
 
     sudo mv raspberry_openvpn.zip /etc/openvpn
     cd /etc/openvpn
