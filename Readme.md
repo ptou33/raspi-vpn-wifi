@@ -123,7 +123,7 @@ Copy it to raspberry, then:
 
     sudo mv raspberry_openvpn.zip /etc/openvpn
     cd /etc/openvpn
-    unzip raspberry_openvpn.zip
+    sudo unzip raspberry_openvpn.zip
     sudo cp openvpn.ovpn CG_CH.conf
     sudo nano CG_CH.conf
 
@@ -136,12 +136,17 @@ At the bottom of the configuration passage (after 'verb 4') add the following tw
     up /etc/openvpn/update-resolv-conf
     down /etc/openvpn/update-resolv-conf
 
-Add username an password to user.txt
+From Cyberghost Download Configuration page, copy username and password.
+Create a user.txt file, and put them in two lines.
 
     sudo nano user.txt
+
+Open openvpn configuration file:
+
     sudo nano /etc/default/openvpn
     
-AUTOSTART="CG_XX"  (the name of the file WITHOUT the file extension ‘.conf’)
+Modify AUTOSTART="CG_XX"  the name of the file WITHOUT the file extension ‘.conf’
+Save, and restart services:
 
     sudo update-rc.d openvpn enable
     sudo service openvpn start
